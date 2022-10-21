@@ -1,0 +1,73 @@
+.country{
+    padding-top: 150px;
+    @include mobile{
+        padding-top: 70px;
+    }
+    @include tablet{
+        padding: 100px 0 0;
+    }    
+    .countries{
+        width: 100%;        
+        display:flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        @include mobile{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        @include tablet-mini{
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 10px;
+        } 
+        .listcountry{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            @include mobile{
+                padding: 0 0 20px;
+            }
+            @include tablet{
+                padding: 0 0 20px;
+            }
+            p{
+                color: $mainColor;
+                font-weight: 800px;
+                font-size: 1.3rem;
+                @include mobile{
+                    font-size: 14px;
+                }
+                @include tablet{
+                    font-size: 16px;
+                }
+            }
+            .flag{
+                img{
+                    @include mobile{
+                        width: 60px;
+                        height: 60px;
+                    }
+                    @include tablet{
+                        width: 80px;
+                        height: 80px;
+                    }
+                }
+            }
+        }
+    }
+    .text-1{
+        margin-bottom: 40px;
+        h1{
+            font-size: 4.6vh;
+            color: $BLUE;
+             @include mobile{
+                font-size: 24px;
+             }
+             @include tablet{
+                 font-size: 30px;
+             }
+        }
+    }
+}

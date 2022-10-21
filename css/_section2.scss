@@ -1,0 +1,52 @@
+.section-2{
+    display: block;
+    justify-content: center;
+    align-items: center;
+    padding: 150px 0 0;
+    width: 100%;
+    max-width: 1200px;
+    @include mobile{
+        padding: 70px 0 0; 
+    }
+    @include tablet{
+        padding: 150px 0 0;
+    }
+    @include tablet-mini{
+        padding: 100px 0 0;
+    }
+    .text{
+        padding: 0 0 50px;
+        h1{
+            color: $BLUE;
+            padding: 0 0 30px;
+            font-size: 4.6vh;
+            @include mobile{
+                font-size: 24px; 
+            }
+             @include tablet{
+                 font-size: 30px;
+             }
+        }
+        p{
+            color: $Color;
+            font-size: 24px;
+             @include mobile{
+                font-size: 15px; 
+            }
+            @include tablet{
+                font-size: 18px;
+            }
+        }
+    }
+    .img-1{
+        width: 100%;
+        .pic{
+            width: 100%;
+            img{
+                object-fit: contain;
+                width: 100%;
+            }
+        }
+    }
+    
+}

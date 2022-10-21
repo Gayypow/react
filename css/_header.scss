@@ -1,0 +1,130 @@
+.shadow{
+    box-shadow: rgb(219, 219, 219) 0 0 5px;
+    background-color: #fff;
+}
+.change{
+    background-color: #fff;
+    transition: 0ms;
+}
+
+
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1;
+    height: 100px;
+    transition: 0.5s;
+   
+
+ 
+ 
+    nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 95%;
+        max-width: 1200px;
+        margin: 0 auto;
+        .fa{
+            color: $BLUE;
+            display: none;
+            @include tablet-mini{
+                display: block;
+                z-index: 1000;
+            }
+        }
+        .logo{
+            width: auto;
+           height: 70px;
+           @include tablet{
+            height: 50px;
+            width: auto;              
+           }
+           @include tablet-mini{
+            height: 40px;
+            width: auto;              
+           }
+           @include mobile{
+               height: 40px;
+               width: auto;
+           }
+           img{
+               height: 100%;
+               object-fit: cover;
+           }
+        }
+        .list-active{
+            right: 0;
+        }
+        ul{
+            display: flex;
+            align-items: center;          
+            @include tablet-mini{
+                background-color: #fff;
+                display: block;
+                position: fixed;
+                right: -100%;
+                top: 0;
+                height: 100vh;
+                width: 100%;
+                transition: all 0.3s;
+            }
+           li{
+            @include tablet-mini{
+                padding: 32px 0;
+                text-align: center;   
+            }
+                a{
+                    margin-left: 50px;
+                    text-decoration: none;
+                    font-size: 18px;
+                    color: $Color;
+                    @include tablet-mini{
+                        font-size: 15px;
+                        margin: 0;
+                    }
+                    @include mobile {
+                        margin: 0;
+                        font-size: 15px;
+                        width: 100%;
+                        margin-left: 0;
+                    }
+                }
+                span {
+                      color: $mainColor; 
+                      font-size: 18px;
+                      margin-left: 50px;
+                      @include tablet-mini{
+                        text-align: center;
+                        font-size: 15px;
+                        margin-left: 0;
+                        width: 100%;
+                    }
+                      @include mobile{
+                      font-size: 15px;
+                      }
+            }
+        }
+     }
+     .first{
+         @include tablet-mini{
+            padding-top: 40%;
+         }
+     }
+ 
+    }
+ }
+
+ .container{
+     position: relative;
+     width: 95%;
+     margin: 0 auto;
+     max-width: 1200px;
+ }
+
+ 

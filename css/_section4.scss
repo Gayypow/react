@@ -1,0 +1,112 @@
+.hyzmat{
+    width: 100%;
+    padding-top: 150px;
+    max-width: 1200px;
+    display: block;
+    @include mobile{
+        padding-top: 70px;
+    } 
+    @include tablet{
+        padding-top: 100px;
+    }   
+    .yazgy{
+        margin-bottom: 40px;
+        h1{
+            color: $BLUE;
+            font-size: 4.6vh;
+            @include mobile{
+                font-size: 24px;
+            }
+            @include tablet{
+                font-size: 30px;
+            } 
+        }
+    }
+    .container-yukler{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: space-between;
+        @include mobile{
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 10px;
+        }
+        @include tablet{
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 10px;
+        }
+        .surat{
+            margin: 0 0 20px;
+            padding: 1rem 0;
+            @include mobile{
+                margin: 0;
+            } 
+            @include tablet{
+                margin: 0;
+            }
+            img{
+                height: 100%;
+                @include mobile{
+                    height: 50px;
+                    width: auto;
+                }
+                @include tablet-mini{
+                    height: 70px;
+                    width: auto;
+                }
+                @include tablet{
+                    height: 70px;
+                    width: auto;
+                }
+            }
+        }
+        .gruz{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            width: 275px;
+            margin-bottom: 30px;
+            @include mobile{
+                margin-bottom: 15px;
+            }
+            @include tablet{
+                margin-bottom: 15px;
+                width: 100%;
+            }
+            .about{
+                margin: 0 0 20px;
+                @include mobile{
+                    margin-bottom: 0;
+                }
+                @include tablet{
+                    margin-bottom: 0;
+                }
+                p{
+                    color: $mainColor;
+                    font-size: 1.3rem;
+                    font-weight: bold;
+                    min-height: 60px;
+                    @include mobile{
+                        font-size: 18px;
+                    }
+                    @include tablet{
+                        font-size: 20px;
+                    }
+                }
+            }
+            p{
+                color: $Color;
+                min-height: 60px;
+                font-size: 1.2rem;
+                @include mobile{
+                    font-size: 14px;
+                }
+                @include tablet{
+                    font-size: 16px;
+                }
+            }
+        }
+    }
+}

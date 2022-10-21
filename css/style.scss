@@ -1,0 +1,49 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Maven+Pro:wght@500&family=Questrial&family=Roboto:ital@1&family=Square+Peg&display=swap');
+// Init
+@import '../css/init';
+//header
+@import '../css/header';
+//section1
+@import '../css/section1';
+//landing
+@import '../css/landing';
+//section2
+@import '../css/section2';
+//section3
+@import '../css/section3';
+//section4
+@import '../css/section4';
+//section5
+@import '../css/section5';
+//footer
+@import '../css/footer';
+
+
+//https://youtu.be/xOQU3YNHxJc
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Maven Pro', sans-serif;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    min-height: 200vh;
+    overflow-x: hidden;
+}
+html {
+    scroll-behavior: smooth;
+}
+
+
+
+
